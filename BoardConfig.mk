@@ -153,6 +153,7 @@ TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_LOGICAL := oppo_product oppo_engineering preload_common
+TW_OZIP_DECRYPT_KEY := 0000
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -160,3 +161,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# PBRP Build Flags
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
