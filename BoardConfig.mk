@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2020
+DEVICE_PATH := device/realme/rmx2020
 
 # Build
 ALLOW_MISSING_DEPENDENCIES := true
@@ -47,7 +47,7 @@ TARGET_USES_UEFI := true
 TARGET_BOARD_PLATFORM := mt6768
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2020,RMX2027,rmx2020,zipkus
+TARGET_OTA_ASSERT_DEVICE := rmx2020,RMX2027,RMX2020,zipkus,rmx2027
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2

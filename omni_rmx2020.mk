@@ -22,14 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
-PRODUCT_DEVICE := RMX2020
-PRODUCT_NAME := twrp_RMX2020
+PRODUCT_DEVICE := rmx2020
+PRODUCT_NAME := omni_rmx2020
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2020
+PRODUCT_MODEL := rmx2020
 PRODUCT_MANUFACTURER := realme
-TW_DEVICE_VERSION := By sarthakroy2002
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
