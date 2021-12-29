@@ -177,5 +177,5 @@ TARGET_USES_LOGD := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
 #PB Torch
-PB_TORCH_PATH := /proc/qcom_flash
+PB_TORCH_PATH := "/proc/qcom_flash"
 PB_TORCH_MAX_BRIGHTNESS := 1
