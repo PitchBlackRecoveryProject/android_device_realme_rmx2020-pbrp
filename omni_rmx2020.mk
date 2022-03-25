@@ -26,9 +26,9 @@ $(call inherit-product, vendor/pb/config/common.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rmx2020
 PRODUCT_NAME := omni_rmx2020
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme C3
-PRODUCT_MANUFACTURER := realme
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := C3/Narzo 10A
+PRODUCT_MANUFACTURER := Realme
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
