@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2020
+DEVICE_PATH := device/realme/rmx2020
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -127,7 +127,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 # Crypto
-#TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 PLATFORM_VERSION := 127
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2127-12-31
@@ -183,16 +183,15 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_NO_REBOOT_RECOVERY := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
+TWRP_INCLUDE_LOGCAT := true
+TW_INCLUDE_FUSE_EXFAT := true
+TARGET_USES_LOGD := true
+TW_INCLUDE_FUSE_NTFS := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.date.utc;ro.bootimage.build.date.utc=ro.build.date.utc;ro.odm.build.date.utc=ro.build.date.utc;ro.product.build.date.utc=ro.build.date.utc;ro.system.build.date.utc=ro.build.date.utc;ro.system_ext.build.date.utc=ro.build.date.utc;ro.vendor.build.date.utc=ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
 
-# exFAT FS Support
-TW_INCLUDE_FUSE_EXFAT := true
-
-# NTFS Support
-TW_INCLUDE_FUSE_NTFS := true
-
-# Debug
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+PB_TORCH_PATH := /proc/qcom_flash
+PB_TORCH_MAX_BRIGHTNESS := 1

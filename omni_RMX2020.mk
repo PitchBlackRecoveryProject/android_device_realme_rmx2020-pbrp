@@ -15,13 +15,13 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := RMX2020
+PRODUCT_RELEASE_NAME := rmx2020
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
-LOCAL_PATH := device/realme/RMX2020
+LOCAL_PATH := device/realme/rmx2020
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -30,15 +30,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX2020
-PRODUCT_NAME := twrp_RMX2020
+PRODUCT_DEVICE := rmx2020
+PRODUCT_NAME := omni_rmx2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Monet
 PRODUCT_MANUFACTURER := realme
-TW_DEVICE_VERSION := By sarthakroy2002 (For RealmeUI 1.0)
 
 # HACK: Set vendor patch level
 PRODUCT_PRODUCT_PROPERTIES += \
