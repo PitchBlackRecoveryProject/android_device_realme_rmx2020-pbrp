@@ -34,7 +34,6 @@
 /metadata			emmc	/dev/block/platform/bootdevice/by-name/md_udc
 /cache				ext4	/dev/block/platform/bootdevice/by-name/cache        flags=display="Cache";wipeingui
 /data				ext4	/dev/block/platform/bootdevice/by-name/userdata		flags=fileencryption=aes-256-xts
-/data				f2fs	/dev/block/platform/bootdevice/by-name/userdata		flags=fileencryption=aes-256-xts
 /dtbo				emmc 	/dev/block/platform/bootdevice/by-name/dtbo 		flags=display="DTBo";backup=1
 /vbmeta				emmc 	/dev/block/platform/bootdevice/by-name/vbmeta 		flags=display="VBmeta";backup=1
 
