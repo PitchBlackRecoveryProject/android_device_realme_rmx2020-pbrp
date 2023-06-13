@@ -15,13 +15,6 @@
 /system_ext             ext4    /dev/block/mapper/system_ext                            wait,avb,logical,first_stage_mount,flags=backup=1;display="System_ext"
 /system_ext             erofs   /dev/block/mapper/system_ext                            wait,avb,logical,first_stage_mount,flags=backup=1;display="System_ext"
 
-/system_image	        emmc	/dev/block/mapper/system                                flags=backup=1;display="System Image";flashimg=1;wipeingui
-/vendor_image	        emmc	/dev/block/mapper/vendor                                flags=backup=1;display="Vendor Image";flashimg=1;wipeingui
-/product_image	        emmc	/dev/block/mapper/product                               flags=backup=1;display="Product Image";flashimg=1;wipeingui
-/odm_image	            emmc	/dev/block/mapper/odm                                   flags=backup=1;display="ODM Image";flashimg=1;wipeingui
-/system_ext_image	    emmc	/dev/block/mapper/system_ext                            flags=backup=1;display="System_ext Image";flashimg=1;wipeingui
-
-
 /proinfo			emmc	/dev/block/platform/bootdevice/by-name/proinfo		flags=display="proinfo";backup=1
 /nvram				emmc	/dev/block/platform/bootdevice/by-name/nvram		flags=display="nvram";backup=1;flashimg=1
 /protect_f			ext4	/dev/block/platform/bootdevice/by-name/protect1		flags=display="protect_f";backup=1
